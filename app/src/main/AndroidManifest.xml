@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="prashushi.boxing">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/boxing"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityHome"
+           />
+        <activity android:name=".ActivityListFights"
+            android:parentActivityName=".ActivityHome"
+            />
+        <activity android:name=".ActivityAddFight"
+            android:parentActivityName=".ActivityHome"
+            />
+        <activity android:name=".ActivityListScores"
+            android:parentActivityName=".ActivityHome"
+            />
+        <activity android:name=".ActivityChoose"
+            android:parentActivityName=".ActivityListFights"/>
+        <activity android:name=".ActivityOptionSelected"
+            android:parentActivityName=".ActivityListFights"/>
+        <activity android:name=".ActivityFightRounds"
+            android:parentActivityName=".ActivityHome"/>
+    </application>
+</manifest>

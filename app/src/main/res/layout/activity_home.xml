@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!-- add spinner here -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<!-- 30 difference between blocks(110*80)-->
+        <RelativeLayout
+
+            android:layout_width="230dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/blocks">
+
+                <RelativeLayout
+                    android:id="@+id/block1"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/box_rounded_left_up">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="PREDICT\nFIGHTS"
+                        android:gravity="center"
+                        android:textColor="@color/bw_black"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/box_rounded_right_up"
+                    android:id="@+id/block2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="SCORE\nFIGHTS"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        />
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/box_rounded_left_bottom"
+                android:id="@+id/block3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Old\nPredictions"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/box_rounded_right_bottom"
+                android:id="@+id/block4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Old\nScores"
+                    android:gravity="center"
+                    android:textColor="@color/bw_black"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="15dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="BOXING"
+                    android:padding="20dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="How it\nworks"
+            android:textColor="@color/bw_black"
+            android:background="@color/bw_white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/blocks"
+            android:layout_alignLeft="@+id/blocks"
+            android:layout_alignStart="@+id/blocks"
+            android:id="@+id/how" />
+        <Button
+            android:id="@+id/add_custom"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@color/bw_black"
+            android:text="Custom\nScorecard"
+            android:layout_alignTop="@+id/how"
+            android:layout_alignRight="@+id/blocks"
+            android:layout_alignEnd="@+id/blocks" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/im_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_close"
+        android:background="@drawable/box_rounded_fill"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+    <ScrollView
+        android:id="@+id/hidden_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:elevation="20dp"
+        android:visibility="invisible"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryLight">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/how_to"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

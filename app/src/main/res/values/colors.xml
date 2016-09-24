@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryLight">#2a4a69</color>
+    <color name="colorPrimary">#1f3a54</color>
+    <color name="colorPrimaryDark">#14304b</color>
+    <color name="colorAccent">#2a4a69</color>
+
+    <color name="bw_white">#1400</color>
+    <color name="bw_black">#123</color>
+    <color name="grey">#4000</color>
+    <color name="white">#fff</color>
+    <color name="grey_light">#2000</color>
+    <color name="grey_dark">#8000</color>
+    <color name="fade">#6000</color>
+    <color name="blue">#63cbed</color>
+    <color name="card_back">#f1f5f7</color>
+    <color name="blue_dark">#342598</color>
+    <color name="red_cross">#d60000</color>
+
+</resources>

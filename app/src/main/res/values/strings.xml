@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Boxing</string>
+    <string name="dummy_date">17th, Sep 2016</string>
+    <string name="predicted">Predicted?</string>
+    <string name="dummy_a_vs_b">Deepak Vindru Vs \nAjay Deopa</string>
+    <string name="no_connection">No Connection</string>
+
+    <string name="localhost">http://ec2-54-186-64-186.us-west-2.compute.amazonaws.com/boxing-rest-api/public/</string>
+    <string name="how_to">      How to score?
+\n\n
+    Boxing scoring is on a 10 point must system, so a typical round winner will take a round 10-9.\n__________
+\n\n
+        Judges look for:\n
+\n
+    Clean punching – Blows that are delivered upon an opponent that are easy to see, that cause clear damage, and that land without any unanticipated difficulty or interference.\n
+\n
+    Ring generalship - The ability to minimise an opponent\’s strengths, and control the action to suit one\’s own set of skills. This can be accomplished thanks to good footwork, agility, feinting or any other tactical advantage designed to make an opponent appear awkward, or in any other way seem out of his element.
+\n\n
+    Effective aggression - A hostile or forceful behaviour designed to create a desired or intended result, or produce a favourable impression.
+\n\n
+    When a single knockdown has been scored in a round, it is typically scored 10-8, and for every subsequent knockdown, another point is added to the margin (i.e. 10-7, 10-6 ...)
+\n\n
+    On rare occasions, a 10-8 can be scored without a knockdown - when a round is completely one-sided and one fighter dominates the whole round so convincingly that it\'s difficult to give their opponent any credit for it.
+\n\n
+    Again, there can also be occasions where this occurs, yet the fighter dominating the action is knocked down, resulting in a score of 10-9 to the fighter who scores the knockdown.
+\n\n
+    Point deductions can occur when people break the rules, but the referee will always decide this and indicate to the judges and the crowd that a point deduction has taken place.
+\n\n
+    Points for each round are tallied up and ultimately, the winner of the bout is the fighter with the most points, bar any stoppages.
+\n\n
+    This usually occurs for serious fouls which may affect the outcome of the fight, or for repeatedly ignoring referees’ warnings for deliberate infringements of a more minor nature.
+\n__________\n\n
+        Outcomes button
+\n\n
+ RTD – Retired – Fighter or their corner withdraw from the match and loses the fight.
+\n\n
+ KO – Knockout - Fighter does not get up from knockdown after a 10 count from the referee and loses the fight
+\n\n
+ TKO - Technical Knockout - Referee steps in because he feels fighter is unable to continue and loses the fight.
+\n\n
+ TD - Technical Decision – Referee, doctor, commissioner or ringside physician stops the fight normally due to injury. 4 rounds must have been completed, 3 rounds if the fight is a 4 rounder. The scorecards are tallied and the fighter who was ahead on points is awarded a technical decision win.
+\n\n
+ DQ – Disqualified - Referee disqualifies a fighter for repeated fouls or infringement of the rules and loses the fight.
+\n\n
+ NC – No Contest - Results in neither boxer officially winning nor losing. A fight which ends for reasons which are beyond the control of the fighters.
+\n__________\n\n
+        Live button
+\n\n
+    The live button shows the average score round by round of everyone scoring the fights with this app.
+\n\n
+ P button
+\n\n
+ The P button shows the round by round score of up to 4 presenters who are scoring the fights ringside.</string>
+    <string name="dummy_a">Rajat Deepak</string>
+    <string name="dummy_b">Ajay singh Deopa</string>
+</resources>

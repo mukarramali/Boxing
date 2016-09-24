@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_rounded_border_dark"
+        android:id="@+id/fade_block"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SaGa"
+            android:textStyle="bold"
+            android:id="@+id/tv_option_selected"
+            android:textSize="24sp"
+            android:padding="10dp"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/tv_option_selected"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="50dp"/>
+        <TextView
+            android:id="@+id/tv_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_option_selected"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
